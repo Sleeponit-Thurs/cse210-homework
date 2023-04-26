@@ -11,7 +11,7 @@ class Program
         {
             Random randomGenerator = new Random();
             int magicnumber = randomGenerator.Next(1, 100);
-            Console.Write("Try to guess the magic number!");
+            Console.Write("Try to guess the magic number! ");
             do
             {
                guessConvert = Console.ReadLine();
@@ -25,7 +25,7 @@ class Program
                 Console.WriteLine("Higher");
                }
             } while (guess != magicnumber);
-            Console.Write("Would you like to play again? yes/no");
+            Console.Write("Would you like to play again? yes/no ");
             playAgain = Console.ReadLine();
                 if (playAgain == "yes")
                 {
