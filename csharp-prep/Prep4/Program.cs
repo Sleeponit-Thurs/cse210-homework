@@ -13,12 +13,17 @@ class Program
             Console.Write("Enter a number: ");
             string numberConvert = Console.ReadLine();
             numberAdd = float.Parse(numberConvert);
-            numbers.Append(numberAdd);
+            numbers.Add(numberAdd);
         }
-        Console.WriteLine($"The sum is: {numbers.Sum()}");
-        Console.WriteLine($"The average is: {numbers.Sum()/numbers.Count()}");
-        Console.WriteLine($"The largest number is: {numbers.Max()}");
-        Console.WriteLine($"The smallest number is: {numbers.Min()}");
+        float sum = numbers.Sum();
+        float average = sum / numbers.Count;
+        float largestNumber = numbers.Max();
+        float smallestNumber = numbers.Min();
+
+        Console.WriteLine($"The sum is: {sum}");
+        Console.WriteLine($"The average is: {average}");
+        Console.WriteLine($"The largest number is: {largestNumber}");
+        Console.WriteLine($"The smallest number is: {smallestNumber}");
         numbers.Sort();
         foreach (float number in numbers)
         {
