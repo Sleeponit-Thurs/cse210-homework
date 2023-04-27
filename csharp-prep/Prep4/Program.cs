@@ -24,6 +24,7 @@ class Program
         Console.WriteLine($"The average is: {average}");
         Console.WriteLine($"The largest number is: {largestNumber}");
         Console.WriteLine($"The smallest number is: {smallestNumber}");
+        Console.WriteLine($"Here are the numbers from least to greatest:");
         numbers.Sort();
         foreach (float number in numbers)
         {
