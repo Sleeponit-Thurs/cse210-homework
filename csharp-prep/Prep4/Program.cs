@@ -13,7 +13,11 @@ class Program
             Console.Write("Enter a number: ");
             string numberConvert = Console.ReadLine();
             numberAdd = float.Parse(numberConvert);
-            numbers.Add(numberAdd);
+            if (numberAdd != 0)
+            {
+                numbers.Add(numberAdd);
+            }
+            
         }
         float sum = numbers.Sum();
         float average = sum / numbers.Count;
