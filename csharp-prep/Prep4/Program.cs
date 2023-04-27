@@ -15,6 +15,16 @@ class Program
             numberAdd = float.Parse(numberConvert);
             numbers.Append(numberAdd);
         }
-        float numbersSum = numbers.AsQueryable().Sum();
+        Console.WriteLine($"The sum is: {numbers.Sum()}");
+        Console.WriteLine($"The average is: {numbers.Sum()/numbers.Count()}");
+        Console.WriteLine($"The largest number is: {numbers.Max()}");
+        Console.WriteLine($"The smallest number is: {numbers.Min()}");
+        numbers.Sort();
+        foreach (float number in numbers)
+        {
+            Console.WriteLine(number);
+        }
+        
+
     }
 }
