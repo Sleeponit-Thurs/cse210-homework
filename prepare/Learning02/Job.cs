@@ -1,9 +1,9 @@
 public class Job
 {
-    string _company;
-    string _jobTitle;
-    string _startYear;
-    string _endYear;
+    public string _company;
+    public string _jobTitle;
+    public string _startYear;
+    public string _endYear;
 
     public void Display()
     {
