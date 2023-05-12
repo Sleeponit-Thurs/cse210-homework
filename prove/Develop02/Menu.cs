@@ -15,14 +15,14 @@ public class Menu
             Console.WriteLine($"2: {_option2}");
             choiceGrab = Console.ReadLine();
             //Checks for valid input
-            if (float.TryParse(choiceGrab, out float number))
+            if ((float.TryParse(choiceGrab, out float number)) && (number == 1 || number == 2))
             {
                 int choice = int.Parse(choiceGrab);
                 return choice;
             }
          else
             {
-               Console.WriteLine("Invalid input. Please enter a number.");
+               Console.WriteLine("Invalid input. Please chose an option on the menu.");
             }
         }
     }
