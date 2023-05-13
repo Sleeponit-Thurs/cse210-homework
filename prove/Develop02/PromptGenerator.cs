@@ -2,7 +2,12 @@ public class PromptGenerator
 {
     public string Generate(int choice)
     {
-        List<string> Quotes = new List<string> { "You can do it","Epic","Great","Awesome","Nice"};
+        List<string> Quotes = new List<string> 
+        { "What was the most impactful thing that happened to you today?",
+        "If you could improve on thing about yourself... What would it be? (Be kind).",
+        "How did you see the hand of God in your life today?",
+        "How did you bless someone else today?",
+        "What action meant the most to you today?"};
 
         if (choice == 1)
         {
