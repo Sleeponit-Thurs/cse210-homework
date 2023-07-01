@@ -41,7 +41,7 @@ public class Archive : ActivityInitiator
     {
         string[] arrLine = File.ReadAllLines($"{name}.txt");
         string time = arrLine[1];
-        Console.WriteLine($"You have spend {time} seconds in the {name}! Good Job!");
+        Console.WriteLine($"You have spent {time} seconds in the {name}! Good Job!");
 
 
     }
